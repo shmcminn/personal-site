@@ -197,9 +197,11 @@
 			<p>I'm a data journalist at <a id="" href="http://www.cq.com/news?1">CQ</a> and <a id="" href="http://www.rollcall.com/">Roll Call</a>, where I cover Congress and elections. My team and I do everything from <a id="" href="http://data.rollcall.com/media/senate_on_gorsuch/">web interactives</a> to <a id="" href="http://www.rollcall.com/news/politics/party-diversity-gap-to-remain-in-115th">print graphics</a> to <a id="" href="http://www.rollcall.com/news/politics/house-members-can-send-mail-taxpayers-dime-vulnerable-ones-much-much">accountability reporting</a>. We also teach and promote use of data in the newsroom, whether it's setting up a <a id="" href="https://github.com/Quartz/Chartbuilder">Chartbuilder</a> for reporters to use, or giving Excel lessons to our colleagues.</p>
 			<h3>What Else I Do</h3>
 			<p>Since moving to Washington in 2014, I've been an active member at the <a id="" href="http://www.press.org/">National Press Club</a>. I vice-chaired its Young Members Committee in 2016, and have helped produce the politicians vs. press <a id="" href="https://www.youtube.com/watch?v=eWNtIoQCicw">NPC Spelling Bee</a> each year since I joined. I also mentor interns with fellow committee members at the D.C. street newspaper <a id="" href="http://streetsense.org/">Street Sense</a>. </p> 
-			<p>I am also part of the National Press Foundation <a id="" href="http://nationalpress.org/toolbox/paul-miller-washington-reporting-fellowship/">Paul Miller Washington Reporting Fellowship</a> class of 2017, where a couple dozen of us young journalists get lessons on politics and policy with D.C. power players each month. We've learned about covering the White House, immigration policy, Supreme Court and other beats around town.</p>
+			<p>I also regularly attend the <a id="" href="https://www.meetup.com/Hacks-Hackers-DC/">Hacks/Hackers DC meetups</a>, where journalists and technologists come together to discuss and work on improving the future of news.</p>
+			<p>In my spare time you can find me playing football on the National Mall, catching up on Netflix shows everyone else saw five years ago or at the National Press Club bar for Taco Fridays.</p>
 			<h3>Things I Used to Do</h3>
 			<ul>
+				<li>National Press Foundation <a id="" href="https://nationalpress.org/toolbox/paul-miller-washington-reporting-fellowship/">Paul Miller Washington Reporting Fellowship</a>, 2014-15</li>
 				<li>Scripps Howard Foundation Wire <a id="" href="http://www.shfwire.com/author/seanmcminn/">multimedia fellow</a>, 2014-15</li>
 				<li><a id="" href="http://www.wcpj.org/">Washington Center for Politics and Journalism</a> Semester in Washington, 2014</li>
 				<li>Mustang News <a id="" href="http://mustangnews.net/tag/sean-mcminn/">managing editor for news</a> at Cal Poly, San Luis Obispo, 2013-14</li>
@@ -239,7 +241,6 @@
 			<p>Email: <a href="mailto:seanmcminn@cqrollcall.com">seanmcminn@cqrollcall.com</a></p>
 			<a id="" target="_blank" href="http:www.twitter.com/shmcminn"><img src="twitter.png" class="social-icon" id="twitter-social-icon"></a>
 			<a id="" target="_blank" href="https://www.linkedin.com/in/seanmcminn/"><img src="linkedin.png" class="social-icon" id="linkedin-social-icon"></a>
-			<a id="" target="_blank" href="https://www.facebook.com/seanmcminn"><img src="facebook.png" class="social-icon" id="facebook-social-icon"></a>
 			<a target="_blank" id="" href="https://github.com/shmcminn"><img src="github.png" class="social-icon" id="github-social-icon"></a>
 		</div>
 
@@ -264,6 +265,9 @@
 	var populateClips = function() {
 		var clips = [
 		"CQ Roll Call",
+		{"headline": "Fact-Checking Trump’s Claim on U.S. Attacking ISIS ‘Much Harder’", "link": "http://www.rollcall.com/news/policy/trump-said-the-military-was-hitting-isis-much-harder-but-strikes-have-been-at-a-new-low", "monthYear": "Nov. 2017"},
+		{"headline": "House Challengers Find Fundraising Success Outside Their Districts", "link": "http://www.rollcall.com/news/politics/2018-democrats-house-fundraising-challengers", "monthYear": "Sept. 2017"},
+		{"headline": "Congress Is Working More Than Average This Year: Three Days a Week", "link": "http://www.rollcall.com/news/politics/congress-working-average-year-three-days-week", "monthYear": "July 2017"},
 		{"headline": "44 Sitting Members of Congress Have Accepted Donations From Trump", "link": "http://www.rollcall.com/news/44-sitting-members-congress-accepted-donations-trump", "monthYear": "Jan. 2017"},
 		{"headline": "House Republicans Really Love Chick-fil-A", "link": "http://www.rollcall.com/news/house-republicans-really-love-chick-fil", "monthYear": "Oct. 2016"},
 		{"headline": "Absences Pile Up for Some House Members Seeking Other Offices", "link": "http://www.rollcall.com/news/absences-pile-members-seeking-offices", "monthYear": "Sept. 2016"},
@@ -285,7 +289,7 @@
 		]
 		for (i=0; i<clips.length; i++) {
 			if (typeof(clips[i]) == "object") {
-				$("#clips-ul").append('<li><a id="" href="' + clips[i].link + '">' + clips[i].headline + "</a> — " + clips[i].monthYear + "</li>")
+				$("#clips-ul").append('<li><a id="" target="_blank" href="' + clips[i].link + '">' + clips[i].headline + "</a> — " + clips[i].monthYear + "</li>")
 			}	
 			else {
 				$("#clips-ul").append("<h4>" + clips[i] + "</h4>") 
