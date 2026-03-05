@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder</title>
+  <desc id="desc">Placeholder image for Sean McMinn headshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf2f6"/>
+      <stop offset="100%" stop-color="#d6dfe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="150" r="72" fill="#b9c9d8"/>
+  <path d="M90 340c14-67 64-106 110-106s96 39 110 106z" fill="#b9c9d8"/>
+  <text x="200" y="374" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#2c4b69">Sean McMinn</text>
+</svg>
