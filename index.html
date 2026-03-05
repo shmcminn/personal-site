@@ -1,351 +1,163 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-
-<title>Sean McMinn | Data Journalist</title>
-<meta name="description" content="Reporter for CQ Roll Call, covering Congress and elections in Washington, D.C.">
-<meta name="author" content="Sean McMinn">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<style>
-
-	/*begin fix for scrollbar-y jump problem*/
-	html{
-	   overflow-y:scroll;
-	    overflow-x: hidden;
-	}
-
-	::-webkit-scrollbar {
-	    width: 0px;  /* remove scrollbar space */
-	    /*background: transparent;   optional: just make scrollbar invisible */
-	}
-	/* optional: show position indicator in red */
-	::-webkit-scrollbar-thumb {
-	    background: #FF0000;
-	}
-
-	/*end fix for scrollbar-y jump problem*/
-
-	body {
-		background-color: #f9f9f9;
-		padding-top:20px;
-	}
-
-	#top-wrapper {
-		margin-bottom: 15px;
-		margin:0 auto;
-		display: inline-block;
-		text-align: center;
-		width: 100%;
-	}
-
-	.middle-wrapper {
-		width: 100%;
-		max-width: 675px;
-		margin:0 auto;
-	}
-
-	.top-text-wrapper {
-		display: inline-block;
-		text-align: center;
-		vertical-align: top;
-		margin-top: 30px;
-		margin-left: 25px;
-	}
-
-	.big-name span {
-		cursor: pointer;
-	}
-
-	.top-text-wrapper span {
-		cursor: pointer
-	}
-
-	.big-name {
-		font-family: Gotham-Bold, sans-serif;
-		font-weight: 700;
-		color: #333;
-		font-size: 45px;
-		text-align: center;
-		display: block;
-	}
-
-	.top-menu {
-		font-family: Gotham-Book, sans-serif;
-		font-weight: 300;
-		color: #333;
-		font-size: 17px;
-		text-align: center;
-		display: block;
-	}
-
-	p, ul {
-		font-family: Gotham-Book, sans-serif;
-		font-size: 14px;
-		line-height: 1.6;
-	}
-
-	ul {
-	  list-style-type: none;
-	  padding: 0;
-	}
-
-	li {
-		padding-bottom: 7px;
-	}
-
-	h3 {
-		font-family: Gotham-Bold, sans-serif; 
-		font-size: 16px;
-	}
-
-	h4 {
-		color: #444446;
-		margin-bottom:6px;
-	}
-
-	a {
-		text-decoration: none;
-		font-family: Gotham-Book, sans-serif;
-		font-weight300;
-		cursor: pointer;
-	}
-
-	#top-circle-img {
-		display: inline-block;
-		width: 120px;
-		height: 120px;
-	}
-
-	#top-circle-img img {
-		width: 120px;
-		height: 120px;
-	}
-
-	/* unvisited link */
-	a:link {
-	    color: #3366BB;
-	}
-
-	/* visited link */
-	a:visited {
-	    color: #3366BB;
-	}
-
-	/* mouse over link */
-	a:hover {
-	    text-decoration: underline;
-	}
-
-	/* selected link */
-	a:active {
-	    color: #3366BB;
-	}
-
-	#contact-section a:not(:first-of-type){
-		margin-left: 8px;
-	}
-
-	@media (max-width: 314px) {
-		.top-menu {
-			font-size:14px; 
-		}
-		.big-name {
-			font-size: 35px;
-		}
-	}
-
-	@media (max-width:585px) {
-		#top-circle-img {
-			display: block;
-			margin:0 auto;
-		}
-
-		.top-text-wrapper {
-			display: block;
-			margin:0 auto;
-			width: 100%;
-			max-width: 445px;
-		}
-	}
-
-	@media (max-width:675px) {
-		.middle-wrapper {
-			margin-right: 7px;
-			margin-left:7px;
-		}
-	}
-	</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sean McMinn | Data Journalist</title>
+  <meta name="description" content="Sean McMinn is a data and graphics editor at POLITICO.">
+  <link rel="stylesheet" href="./assets/site.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-	<div class="middle-wrapper" id="">
-		<div class="" id="top-wrapper">
-			<div class="" id="top-circle-img"><img id="" src="top-circle-img-new.png"></div>
-			<div class="top-text-wrapper" id="">			
-				<div class="click-to-filter big-name" id="home-top">
-					<span>Sean McMinn<span>
-				</div>
-				<div class="top-menu" id="">
-					<span class="click-to-filter" id="bio-top">Bio</span> | <span class="click-to-filter" id="clips-top">Clips</span> | <span class="click-to-filter" id="appearance-top">In the news</span> | <span class="click-to-filter" id="contact-top">Contact</span>
-				</div>
-			</div>
-		</div>
-		<div class="section-blocks" id="home-section">
-			<h3>About me</h3>
-			<p>I'm a data journalist at <a id="" href="http://www.cq.com/news?1">CQ</a> and <a id="" href="http://www.rollcall.com/">Roll Call</a>, where I cover Congress and elections. My team and I do everything from <a id="" href="http://data.rollcall.com/media/senate_on_gorsuch/">web interactives</a> to <a id="" href="http://www.rollcall.com/news/politics/party-diversity-gap-to-remain-in-115th">print graphics</a> to <a id="" href="http://www.rollcall.com/news/politics/house-members-can-send-mail-taxpayers-dime-vulnerable-ones-much-much">accountability reporting</a>. We also teach and promote use of data in the newsroom, whether it's setting up a <a id="" href="https://github.com/Quartz/Chartbuilder">Chartbuilder</a> for reporters to use, or giving Excel lessons to our colleagues.</p>
-			<h3>What Else I Do</h3>
-			<p>I'm currently an adjunct lecture at the Washington program for Northwestern University's Medill School of Journalism, advising students on graphics and teaching a data journalism course for the 2018 summer quarter.</p>
-			<p>Since moving to Washington in 2014, I've been an active member at the <a id="" href="http://www.press.org/">National Press Club</a>. I am the vice chair of the  Young Members Team there and have helped produce the politicians vs. press <a id="" href="https://www.youtube.com/watch?v=eWNtIoQCicw">NPC Spelling Bee</a> each year since I joined. I also mentor interns with fellow committee members at the D.C. street newspaper <a id="" href="http://streetsense.org/">Street Sense</a>. </p> 
-			<p>I also regularly attend the <a id="" href="https://www.meetup.com/Hacks-Hackers-DC/">Hacks/Hackers DC meetups</a>, where journalists and technologists come together to discuss and work on improving the future of news.</p>
-			<p>In my spare time you can find me playing football on the National Mall, catching up on Netflix shows everyone else saw five years ago or at the National Press Club bar for Taco Fridays.</p>
-			<h3>Things I Used to Do</h3>
-			<ul>
-				<li>National Press Foundation <a id="" href="https://nationalpress.org/toolbox/paul-miller-washington-reporting-fellowship/">Paul Miller Washington Reporting Fellowship</a>, 2016-17</li>
-				<li>Scripps Howard Foundation Wire <a id="" href="http://www.shfwire.com/author/seanmcminn/">multimedia fellow</a>, 2014-15</li>
-				<li><a id="" href="http://www.wcpj.org/">Washington Center for Politics and Journalism</a> Semester in Washington, 2014</li>
-				<li>Mustang News <a id="" href="http://mustangnews.net/tag/sean-mcminn/">managing editor for news</a> at Cal Poly, San Luis Obispo, 2013-14</li>
-				<li>USA Today <a id="" href="http://college.usatoday.com/author/sean-mcminn/">collegiate correspondent and intern</a>, 2013</li>
-				<li><a id="" href="http://www.conejousd.org/redwood/Home.aspx">Redwood Middle School</a> yearbook staff photographer (where it all started), 2005-06</li>
-			</ul>
-		</div>
-		<div class="section-blocks" id="bio-section">
-			<h3>Bio</h3>
-			<p>I’m data reporter at <a href="http://www.cqrollcall.com">CQ Roll Call</a>, where I report, write and produce data presentations for both CQ and Roll Call. I was previously the multimedia fellow at the <a href="http://www.shfwire.com">Scripps Howard Foundation Wire</a> in Washington, D.C., and am a graduate of <a href="http://www.calpoly.edu">California Polytechnic State University, San Luis Obispo</a>. In addition to CQ and Roll Call, my work has been published by USA TODAY, Bloomberg, dozens of Scripps News properties, and other news outlets across the country.</p>
+  <header class="site-header" id="top">
+    <div class="header-inner hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Data Journalist</p>
+        <h1 class="display-name"><span>Sean</span><span>McMinn</span></h1>
+        <p class="dek">Data/graphics editor at POLITICO, leading a visual and data reporting team.</p>
+        <p class="focus-kicker"><strong>Focus:</strong> Politics · Public policy · Accountability · Data visualization</p>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Selected Work</a>
+          <a href="#news">Interviews &amp; Features</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <figure class="hero-photo-wrap">
+        <img
+          class="hero-photo"
+          src="./assets/sean-headshot-fallback.svg"
+          data-headshot="./assets/sean-headshot.png"
+          data-headshot-49ers="./assets/sean-49ers.png"
+          alt="Portrait of Sean McMinn"
+          width="400"
+          height="400"
+          loading="eager"
+          decoding="async"
+        >
+      </figure>
+    </div>
+  </header>
 
-			<p>My first experience covering national news came in January 2013, when I was hired as a <a href="http://www.usatodayeducate.com/staging/index.php/usa-today-collegiate-correspondent-spring-2013/sean-mcminn">collegiate correspondent for USA TODAY</a>. I covered the intersection of millennials and current events, from politics to media to country music.
+  <main id="main-content">
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-head">
+        <h2 id="about-heading">About</h2>
+      </div>
+      <div class="section-body prose">
+        <p>I am the data/graphics editor at <a href="https://www.politico.com/staff/sean-mcminn" rel="noopener noreferrer" target="_blank">POLITICO</a>, where I lead visual and data journalism across coverage areas including investigations, policy and campaigns. I have more than a decade of experience in data-driven reporting and visualization.</p>
+        <p>At POLITICO, I have edited and contributed to reporting including <a href="https://www.politico.com/news/biden-federal-funds-spending-tracking" rel="noopener noreferrer" target="_blank">investigations into Biden's Billions</a>, the <a href="https://www.politico.com/news/magazine/2021/12/07/black-great-migration-series-523619" rel="noopener noreferrer" target="_blank">changing demographics of Black voters</a> and <a href="https://www.politico.com/interactives/2021/covid-by-the-numbers-how-each-state-fared-on-our-pandemic-scorecard/" rel="noopener noreferrer" target="_blank">assessing states' response to the Covid-19 pandemic</a>.</p>
+        <p>Before POLITICO, I worked as a data reporter at <a href="https://www.npr.org/people/660503340/sean-mcminn" rel="noopener noreferrer" target="_blank">NPR</a> and <a href="https://rollcall.com/author/sean-mcminn/" rel="noopener noreferrer" target="_blank">CQ Roll Call</a>. I also worked at the Scripps Howard Foundation Wire in Washington, D.C., where I taught and edited multimedia work for interns. Earlier, as a USA Today collegiate correspondent, I covered higher education, politics and culture.</p>
+        <p>I have taught data journalism at American University and Northwestern University, and trained journalists in Egypt and Tunisia. I am a graduate of Cal Poly San Luis Obispo and an inductee in the journalism department's Hall of Fame.</p>
+        <p>Outside work, I'm training Brazilian jiu-jitsu, working with my rescue dog Bandit and cheering on the <button type="button" class="niners-toggle" id="niners-toggle" aria-pressed="false" title="Switch to 49ers colors">San Francisco 49ers</button>.</p>
+        <figure class="bandit-figure">
+          <img src="./assets/bandit.jpg" data-bandit-49ers="./assets/bandit-49ers.png" alt="Bandit, Sean McMinn's rescue dog" width="220" height="220" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
 
-			<p>My experience covering higher education stemmed from my first two years as a reporter for the Mustang Daily, the student newspaper at Cal Poly. There, I focused on government and administrative issues in the CSU system. My award-winning story on a <a href="http://mustangnews.net/investigation-continues-for-alpha-phi-sorority/">freshman that was hospitalized</a> the night after receiving an invitation to join the Alpha Phi sorority led to policy changes in Cal Poly’s sorority pledging process. Other accountability reporting led to changes at my university on issues such as <a href="http://mustangnews.net/sexual-assault-allegations-left-out-of-cal-poly-annual-crime-report/">sexual assault</a> and <a href="http://mustangnews.net/asi-kills-debate-free-speech-on-campus/">student campaign regulations</a>.</p>
+    <section id="work" aria-labelledby="work-heading">
+      <div class="section-head">
+        <h2 id="work-heading">Selected Work</h2>
+      </div>
+      <div class="section-body work-groups">
+        <details class="work-group">
+          <summary>POLITICO</summary>
+          <ul class="link-list">
+            <li><a href="https://www.politico.com/news/2023/02/16/joe-biden-student-debt-relief-00083243" rel="noopener noreferrer" target="_blank">What we know about the 25M Americans who signed up for Biden's student debt relief</a> | <time datetime="2023-02">Feb. 2023</time></li>
+            <li><a href="https://www.politico.com/news/magazine/2022/12/23/black-voters-suburban-politics-00074479" rel="noopener noreferrer" target="_blank">Black voters are transforming the suburbs and American politics</a> | <time datetime="2022-12">Dec. 2022</time></li>
+            <li><a href="https://www.politico.com/interactives/2021/covid-by-the-numbers-how-each-state-fared-on-our-pandemic-scorecard/" rel="noopener noreferrer" target="_blank">Covid's deadly trade-offs, by the numbers: How each state has fared in the pandemic</a> | <time datetime="2021-12">Dec. 2021</time></li>
+          </ul>
+        </details>
 
-			<p>After writing as a correspondent for USA TODAY, Gannett asked me to intern at its headquarters in McLean, Va. In addition to contributing more reporting to USA TODAY College, I began to learn how to code and use data in my reporting. </p>
+        <details class="work-group">
+          <summary>NPR</summary>
+          <ul class="link-list">
+            <li><a href="https://www.npr.org/2021/07/01/1010897265/as-western-wildfires-worsen-fema-is-denying-most-people-who-ask-for-help" rel="noopener noreferrer" target="_blank">As Western wildfires worsen, FEMA is denying most people who ask for help</a> | <time datetime="2021-07">July 2021</time></li>
+            <li><a href="https://www.npr.org/2021/02/05/962946721/across-the-south-covid-19-vaccine-sites-missing-from-black-and-hispanic-neighbor" rel="noopener noreferrer" target="_blank">Across the South, COVID-19 vaccine sites missing from Black and Hispanic neighborhoods</a> | <time datetime="2021-02">Feb. 2021</time></li>
+            <li><a href="https://www.npr.org/sections/health-shots/2020/09/22/914578634/americas-200-000-covid-19-deaths-small-cities-and-towns-bear-a-growing-share" rel="noopener noreferrer" target="_blank">America's 200,000 COVID-19 deaths: Small cities and towns bear a growing share</a> | <time datetime="2020-09">Sept. 2020</time></li>
+            <li><a href="https://www.npr.org/2019/09/03/754044732/as-rising-heat-bakes-u-s-cities-the-poor-often-feel-it-most" rel="noopener noreferrer" target="_blank">As rising heat bakes U.S. cities, the poor often feel it most</a> | <time datetime="2019-09">Sept. 2019</time></li>
+          </ul>
+        </details>
 
-			<p>During my time internship, I also began planning for a new student media convergence at Cal Poly, which would later be dubbed Mustang News. Students emphasizing in print, digital and broadcast came together to drop Mustang Daily’s print-first mentality and create a digital-first news operation. As the managing editor for news, I led the news coverage and served on our leadership team. </p>
+        <details class="work-group">
+          <summary>CQ Roll Call</summary>
+          <ul class="link-list">
+            <li><a href="https://www.rollcall.com/news/politics/k-street-reinvents-itself-in-the-era-of-trump" rel="noopener noreferrer" target="_blank">K Street reinvents itself in the era of Trump</a> | <time datetime="2018-02">Feb. 2018</time></li>
+            <li><a href="https://www.rollcall.com/news/policy/trump-said-the-military-was-hitting-isis-much-harder-but-strikes-have-been-at-a-new-low" rel="noopener noreferrer" target="_blank">Fact-checking Trump's claim on U.S. attacking ISIS 'much harder'</a> | <time datetime="2017-11">Nov. 2017</time></li>
+            <li><a href="https://www.rollcall.com/news/politics/2018-democrats-house-fundraising-challengers" rel="noopener noreferrer" target="_blank">House challengers find fundraising success outside their districts</a> | <time datetime="2017-09">Sept. 2017</time></li>
+            <li><a href="https://www.rollcall.com/news/politics/congress-working-average-year-three-days-week" rel="noopener noreferrer" target="_blank">Congress is working more than average this year: Three days a week</a> | <time datetime="2017-07">July 2017</time></li>
+            <li><a href="https://www.rollcall.com/news/44-sitting-members-congress-accepted-donations-trump" rel="noopener noreferrer" target="_blank">44 sitting members of Congress have accepted donations from Trump</a> | <time datetime="2017-01">Jan. 2017</time></li>
+            <li><a href="https://www.rollcall.com/news/house-republicans-really-love-chick-fil" rel="noopener noreferrer" target="_blank">House Republicans really love Chick-fil-A</a> | <time datetime="2016-10">Oct. 2016</time></li>
+            <li><a href="https://www.rollcall.com/news/absences-pile-members-seeking-offices" rel="noopener noreferrer" target="_blank">Absences pile up for some House members seeking other offices</a> | <time datetime="2016-09">Sept. 2016</time></li>
+            <li><a href="https://www.rollcall.com/news/house-members-can-send-mail-taxpayers-dime-vulnerable-ones-much-much" rel="noopener noreferrer" target="_blank">House members send mail on taxpayer's dime, vulnerable ones do it much more</a> | <time datetime="2016-08">Aug. 2016</time></li>
+          </ul>
+        </details>
 
-			<p>Also at Mustang News, I started a training program for first-year students interested in journalism. Named The Day After, I provided weekly feedback to freshmen writing follow-up stories to supplement the editorial content published in Mustang News. </p>
+        <details class="work-group">
+          <summary>Scripps Howard Foundation Wire</summary>
+          <ul class="link-list">
+            <li><a href="https://www.sanluisobispo.com/news/local/article39058860.html" rel="noopener noreferrer" target="_blank">Atascadero finds itself stuck in FEMA limbo over disaster aid</a> | <time datetime="2015-08">Aug. 2015</time></li>
+            <li><a href="https://www.wptv.com/news/national/feds-study-life-saving-train-tech-after-crash" rel="noopener noreferrer" target="_blank">Feds study 'life-saving' train tech after crash</a> | <time datetime="2015-02">Feb. 2015</time></li>
+          </ul>
+        </details>
 
-			<p>I graduated cum laude in June 2014 with a major in news-editorial journalism and a minor in statistics. Faculty chose me for the Outstanding Senior award in the Cal Poly journalism department, as well as for other annual scholarships and awards.</p>
-			
-		</div>
-		<div class="section-blocks" id="clips-section">
-			<h3>Clips</h3>
-			<ul id="clips-ul">
-			</ul>			
-		</div>
-		<div class="section-blocks" id="appearance-section">
-			<h3>In the news</h3>
-			<ul id="appearance-ul">
-			</ul>			
-		</div>
-		<div class="section-blocks" id="contact-section">
-			<h3>Contact</h3>
-			<p>Email: <a href="mailto:seanmcminn@cqrollcall.com">seanmcminn@cqrollcall.com</a></p>
-			<a id="" target="_blank" href="http:www.twitter.com/shmcminn"><img src="twitter.png" class="social-icon" id="twitter-social-icon"></a>
-			<a id="" target="_blank" href="https://www.linkedin.com/in/seanmcminn/"><img src="linkedin.png" class="social-icon" id="linkedin-social-icon"></a>
-			<a target="_blank" id="" href="https://github.com/shmcminn"><img src="github.png" class="social-icon" id="github-social-icon"></a>
-		</div>
+        <details class="work-group">
+          <summary>USA Today</summary>
+          <ul class="link-list">
+            <li><a href="https://www.usatoday.com/story/money/personalfinance/2013/09/02/state-funding-declines-raise-tuition/2707837/" rel="noopener noreferrer" target="_blank">Sagging state funding jacks up college tuition</a> | <time datetime="2013-09">Sept. 2013</time></li>
+            <li><a href="https://www.usatoday.com/story/news/nation/2013/05/11/college-grad-jobs-major-metros/2149915/" rel="noopener noreferrer" target="_blank">College grads flock to major, burgeoning metros</a> | <time datetime="2013-05">May 2013</time></li>
+          </ul>
+        </details>
 
+        <details class="work-group">
+          <summary>Mustang News</summary>
+          <ul class="link-list">
+            <li><a href="https://mustangnews.net/sexual-assault-allegations-left-out-of-cal-poly-annual-crime-report/" rel="noopener noreferrer" target="_blank">Sexual assault allegations left out of Cal Poly annual crime report</a> | <time datetime="2014-05">May 2014</time></li>
+            <li><a href="https://mustangnews.net/pres-office-campus-dining-used-cal-poly-wrapping-on-kashi-granola-bars-for-demonstration/" rel="noopener noreferrer" target="_blank">Under wrappers: Cal Poly passes off Kashi granola bars as student made</a> | <time datetime="2013-06">June 2013</time></li>
+            <li><a href="https://mustangnews.net/cal-states-controversial-chancellor-ends-14-year-legacy/" rel="noopener noreferrer" target="_blank">Cal State's controversial chancellor ends 14-year legacy</a> | <time datetime="2012-12">Dec. 2012</time></li>
+          </ul>
+        </details>
+      </div>
+    </section>
 
-	</div>
+    <section id="news" aria-labelledby="news-heading">
+      <div class="section-head">
+        <h2 id="news-heading">Interviews &amp; Features</h2>
+      </div>
+      <div class="section-body">
+        <ul class="link-list">
+          <li><a href="https://journalism.calpoly.edu/2025-mustang-media-hall-fame-inductees-announced" rel="noopener noreferrer" target="_blank">2025 Mustang Media Hall of Fame Inductees Announced</a> | <time datetime="2025">2025</time></li>
+          <li><a href="https://www.politico.com/blogs/meet-politico/2021/12/21/newsroom-spotlight-sean-mcminn-1529054" rel="noopener noreferrer" target="_blank">Newsroom Spotlight: Sean McMinn</a> | <time datetime="2021-12">Dec. 2021</time></li>
+          <li><a href="https://www.npr.org/podcasts/381444450/insight" rel="noopener noreferrer" target="_blank">NPR Insight podcast: FEMA wildfire eligibility investigation segment</a> | <time datetime="2021-07">July 2021</time></li>
+          <li><a href="https://www.sanluisobispo.com/opinion/editorials/article39059019.html" rel="noopener noreferrer" target="_blank">Editorial following FEMA investigation</a> | <time datetime="2015-08">Aug. 2015</time></li>
+          <li><a href="https://www.newtimesslo.com/shredder/10633/spay-a-ho-neuter-a-bro/" rel="noopener noreferrer" target="_blank">Discussion of Cal Poly Greek life reporting</a> | <time datetime="2014-02">Feb. 2014</time></li>
+          <li><a href="https://articles.latimes.com/2012/oct/21/local/la-me-public-record-20121021" rel="noopener noreferrer" target="_blank">LA Times write-up on records request fight</a> | <time datetime="2012-10">Oct. 2012</time></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-head">
+        <h2 id="contact-heading">Contact</h2>
+      </div>
+      <div class="section-body split-layout">
+        <div class="prose">
+          <p>Email: <a href="mailto:seanpm92@gmail.com" rel="noopener noreferrer" target="_blank">seanpm92@gmail.com</a></p>
+        </div>
+        <ul class="link-list">
+          <li><a href="https://www.linkedin.com/in/seanmcminn/" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/shmcminn" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="#top">Back to top</a></p>
+  </footer>
+
+  <script src="./assets/site.js" defer></script>
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<!-- <script src="scrollbarFix.js"></script> -->
-<script>
-
-	var hideAll = function() {
-		$(".section-blocks").hide();
-	}
-
-	var showSectionBlock = function(sbId) {
-		hideAll();
-		$("#" + sbId).show()
-	}
-
-	var populateClips = function() {
-		var clips = [
-		"CQ Roll Call",
-		{"headline": "K Street Reinvents Itself in the Era of Trump", "link": "https://www.rollcall.com/news/politics/k-street-reinvents-itself-in-the-era-of-trump", "monthYear": "Feb. 2018"},
-		{"headline": "Fact-Checking Trump’s Claim on U.S. Attacking ISIS ‘Much Harder’", "link": "http://www.rollcall.com/news/policy/trump-said-the-military-was-hitting-isis-much-harder-but-strikes-have-been-at-a-new-low", "monthYear": "Nov. 2017"},
-		{"headline": "House Challengers Find Fundraising Success Outside Their Districts", "link": "http://www.rollcall.com/news/politics/2018-democrats-house-fundraising-challengers", "monthYear": "Sept. 2017"},
-		{"headline": "Congress Is Working More Than Average This Year: Three Days a Week", "link": "http://www.rollcall.com/news/politics/congress-working-average-year-three-days-week", "monthYear": "July 2017"},
-		{"headline": "44 Sitting Members of Congress Have Accepted Donations From Trump", "link": "http://www.rollcall.com/news/44-sitting-members-congress-accepted-donations-trump", "monthYear": "Jan. 2017"},
-		{"headline": "House Republicans Really Love Chick-fil-A", "link": "http://www.rollcall.com/news/house-republicans-really-love-chick-fil", "monthYear": "Oct. 2016"},
-		{"headline": "Absences Pile Up for Some House Members Seeking Other Offices", "link": "http://www.rollcall.com/news/absences-pile-members-seeking-offices", "monthYear": "Sept. 2016"},
-		{"headline": "House Members Send Mail on Taxpayer’s Dime, Vulnerable Ones Do It Much More", "link": "http://www.rollcall.com/news/house-members-can-send-mail-taxpayers-dime-vulnerable-ones-much-much", "monthYear": "Aug. 2016"},
-		{"headline": "Whose Convention? Clintons Mentioned Nearly Twice as Much as Trump", "link": "http://www.rollcall.com/news/whose-convention-elected-officials-mention-clinton-twice-much-trump", "monthYear": "July 2016"},
-		"Scripps Howard Foundation Wire",
-		{"headline": "Atascadero finds itself stuck in FEMA limbo over disaster aid", "link": "http://www.sanluisobispo.com/news/local/article39058860.html", "monthYear": "Aug. 2015"},
-		{"headline": "Feds study ‘life-saving' train tech after crash", "link": "http://www.thedenverchannel.com/news/national/feds-study-life-saving-train-tech-after-crash", "monthYear": "Feb. 2015"},
-		{"headline": "Scripps Howard Foundation Wire launches new website", "link": "http://www.shfwire.com/scripps-howard-foundation-wire-launches-new-website/", "monthYear": "Feb. 2015"},
-		{"headline": "Even after executive action, no guarantees for international students", "link": "http://www.shfwire.com/even-after-executive-action-no-guarantees-for-international-students/", "monthYear": "Nov. 2014"},
-		{"headline": "In fight for student vote, social media gives GOP a hopeful sign", "link": "http://www.shfwire.com/in-fight-for-student-vote-social-media-gives-gop-a-hopeful-sign/", "monthYear": "Oct. 2014"},
-		"USA Today",
-		{"headline": "Sagging state funding jacks up college tuition", "link": "http://www.usatoday.com/story/money/personalfinance/2013/09/02/state-funding-declines-raise-tuition/2707837/", "monthYear": "Sept. 2013"},
-		{"headline": "College grads flock to major, burgeoning metros", "link": "http://www.usatoday.com/story/news/nation/2013/05/11/college-grad-jobs-major-metros/2149915/", "monthYear": "May 2013"},	
-		"Mustang News",
-		{"headline": "Sexual assault allegations left out of Cal Poly annual crime report", "link": "http://mustangnews.net/sexual-assault-allegations-left-out-of-cal-poly-annual-crime-report/", "monthYear": "May 2014"},
-		{"headline": "Under wrappers: Cal Poly passes off Kashi granola bars as student made", "link": "http://mustangnews.net/pres-office-campus-dining-used-cal-poly-wrapping-on-kashi-granola-bars-for-demonstration/", "monthYear": "June 2013"},
-		{"headline": "Cal State’s controversial chancellor ends 14-year legacy", "link": "http://mustangnews.net/cal-states-controversial-chancellor-ends-14-year-legacy/", "monthYear": "Dec. 2012"}		
-		]
-		for (i=0; i<clips.length; i++) {
-			if (typeof(clips[i]) == "object") {
-				$("#clips-ul").append('<li><a id="" target="_blank" href="' + clips[i].link + '">' + clips[i].headline + "</a> — " + clips[i].monthYear + "</li>")
-			}	
-			else {
-				$("#clips-ul").append("<h4>" + clips[i] + "</h4>") 
-			}
-		}		
-	}
-
-	var populateInNews = function() {
-		var appearance = [
-		{"headline": "Podcast: Finding Stories in Statistics", "link": "https://www.podcastone.com/pg/jsp/program/episode.jsp?programID=1029&pid=1705705", "monthYear": "March 2016"},
-		{"headline": "Editorial in San Luis Obispo Tribune following my investigation into a city's years-long fight with FEMA", "link": "http://www.sanluisobispo.com/opinion/editorials/article39059019.html", "monthYear": "Aug. 2015"},
-		{"headline": "Talking Hillary Cliton's campaign on GVH Live", "link": "https://www.youtube.com/watch?v=CfeYE06OZHs", "monthYear": "March. 2015"},		
-		{"headline": "Discussion on my Cal Poly greek life reporting in SLO New Times", "link": "http://www.newtimesslo.com/shredder/10633/spay-a-ho-neuter-a-bro/", "monthYear": "Feb. 2014"},
-		{"headline": "New Times article on my scholarship award, named after NT founder", "link": "http://www.newtimesslo.com/news/9609/steve-moss-lives-on/", "monthYear": "June 2013"},
-		{"headline": "LA Times write up on my 20-cent records request fight with the CSU ", "link": "http://articles.latimes.com/2012/oct/21/local/la-me-public-record-20121021", "monthYear": "Oct. 2012"}
-		]
-		for (i=0; i<appearance.length; i++) {
-			if (typeof(appearance[i]) == "object") {
-				$("#appearance-ul").append('<li><a id="" href="' + appearance[i].link + '">' + appearance[i].headline + "</a> — " + appearance[i].monthYear + "</li>")
-			}	
-			else {
-				$("#appearance-ul").append("<h4>" + appearance[i] + "</h4>") 
-			}
-		}		
-	}
-
-
-		var makeTopClickable = function() {
-			var clickables = $(".click-to-filter")
-
-			for (i=0; i<clickables.length; i++) {
-				$("#" + clickables[i].id).on("click", function() {
-					showSectionBlock($(this).attr("id").split("-")[0] + "-section")
-				})
-
-			}
-		}
-
-	$(function() {
-		makeTopClickable();
-		showSectionBlock("home-section");
-		populateClips();
-		populateInNews();
-	})
-		
-	
-
-	
-
-
-
-	
-
-
-
-</script>
-
 </html>
