@@ -211,6 +211,7 @@ main { padding: 0.5rem 0 2.5rem; }
 section {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
+  scroll-margin-top: 3rem;
 }
 section:first-of-type { border-top: 0; }
 
@@ -316,10 +317,11 @@ section:first-of-type { border-top: 0; }
 
 /* ── Sticky navigation bar ──────────────────────────── */
 .sticky-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
-  width: 100%;
   background: rgba(244, 241, 237, 0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
