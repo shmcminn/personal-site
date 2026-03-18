@@ -199,8 +199,7 @@ h1 { margin: 0; }
   font-size: 0.92rem;
 }
 
-.site-nav a:hover,
-.site-nav a[aria-current="true"] {
+.site-nav a:hover {
   border-color: #c88773;
   background: #f7efec;
   color: var(--accent);
@@ -378,8 +377,7 @@ section:first-of-type { border-top: 0; }
   transition: color 120ms, background 120ms;
 }
 
-.sticky-bar-nav a:hover,
-.sticky-bar-nav a[aria-current="true"] {
+.sticky-bar-nav a:hover {
   color: var(--accent);
   background: rgba(179, 71, 47, 0.08);
 }
@@ -456,8 +454,7 @@ html.theme-49ers .site-nav a {
   color: #000000;
 }
 
-html.theme-49ers .site-nav a:hover,
-html.theme-49ers .site-nav a[aria-current="true"] {
+html.theme-49ers .site-nav a:hover {
   border-color: #aa0000;
   background: #b3995d;
   color: #aa0000;
@@ -497,8 +494,7 @@ html.theme-49ers .sticky-bar-name:hover { color: #b3995d; }
 
 html.theme-49ers .sticky-bar-nav a { color: rgba(255, 255, 255, 0.8); }
 
-html.theme-49ers .sticky-bar-nav a:hover,
-html.theme-49ers .sticky-bar-nav a[aria-current="true"] {
+html.theme-49ers .sticky-bar-nav a:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.15);
 }

@@ -44,58 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   syncThemePhotos();
 
-  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a"));
-  var stickyNavLinks = Array.prototype.slice.call(document.querySelectorAll(".sticky-bar-nav a"));
-  var allNavLinks = navLinks.concat(stickyNavLinks);
-
-  var sections = navLinks
-    .map(function (link) {
-      var id = link.getAttribute("href");
-      if (!id || id.charAt(0) !== "#") {
-        return null;
-      }
-      return document.querySelector(id);
-    })
-    .filter(Boolean);
-
-  function setCurrent(hash) {
-    allNavLinks.forEach(function (link) {
-      if (link.getAttribute("href") === hash) {
-        link.setAttribute("aria-current", "true");
-      } else {
-        link.removeAttribute("aria-current");
-      }
-    });
-  }
-
-  allNavLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-      setCurrent(link.getAttribute("href"));
-    });
-  });
-
-  if ("IntersectionObserver" in window && sections.length > 0) {
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            setCurrent("#" + entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: "-40% 0px -45% 0px",
-        threshold: 0.01
-      }
-    );
-
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
-  } else if (navLinks.length > 0) {
-    setCurrent(navLinks[0].getAttribute("href"));
-  }
-
   // Sticky bar — show when header scrolls out of view
   var siteHeader = document.querySelector(".site-header");
   var stickyBar = document.getElementById("sticky-bar");
