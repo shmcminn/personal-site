@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
   syncThemePhotos();
 
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".site-nav a"));
+  var stickyNavLinks = Array.prototype.slice.call(document.querySelectorAll(".sticky-bar-nav a"));
+  var allNavLinks = navLinks.concat(stickyNavLinks);
+
   var sections = navLinks
     .map(function (link) {
       var id = link.getAttribute("href");
@@ -56,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .filter(Boolean);
 
   function setCurrent(hash) {
-    navLinks.forEach(function (link) {
+    allNavLinks.forEach(function (link) {
       if (link.getAttribute("href") === hash) {
         link.setAttribute("aria-current", "true");
       } else {
@@ -65,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  navLinks.forEach(function (link) {
+  allNavLinks.forEach(function (link) {
     link.addEventListener("click", function () {
       setCurrent(link.getAttribute("href"));
     });
@@ -91,6 +94,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   } else if (navLinks.length > 0) {
     setCurrent(navLinks[0].getAttribute("href"));
+  }
+
+  // Sticky bar — show when header scrolls out of view
+  var siteHeader = document.querySelector(".site-header");
+  var stickyBar = document.getElementById("sticky-bar");
+  if (siteHeader && stickyBar && "IntersectionObserver" in window) {
+    var headerObserver = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          stickyBar.classList.toggle("is-visible", !entry.isIntersecting);
+        });
+      },
+      { threshold: 0 }
+    );
+    headerObserver.observe(siteHeader);
   }
 
   var ninersToggle = document.getElementById("niners-toggle");

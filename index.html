@@ -4,7 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sean McMinn | Data Journalist</title>
-  <meta name="description" content="Sean McMinn is a data and graphics editor at POLITICO.">
+  <meta name="description" content="Sean McMinn is a data and graphics editor at POLITICO, leading visual and data journalism across investigations, policy, and campaigns.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23b3472f'/><text x='16' y='23' font-family='system-ui,sans-serif' font-size='15' font-weight='800' fill='white' text-anchor='middle'>SM</text></svg>">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seanmcminn.com/">
+  <meta property="og:title" content="Sean McMinn | Data Journalist">
+  <meta property="og:description" content="Sean McMinn is a data and graphics editor at POLITICO, leading visual and data journalism across investigations, policy, and campaigns.">
+  <meta property="og:image" content="https://seanmcminn.com/assets/sean-headshot.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sean McMinn | Data Journalist">
+  <meta name="twitter:description" content="Sean McMinn is a data and graphics editor at POLITICO, leading visual and data journalism across investigations, policy, and campaigns.">
+  <meta name="twitter:image" content="https://seanmcminn.com/assets/sean-headshot.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+
   <link rel="stylesheet" href="./assets/site.css">
 </head>
 <body>
@@ -40,6 +60,18 @@
     </div>
   </header>
 
+  <div class="sticky-bar" id="sticky-bar">
+    <div class="sticky-bar-inner">
+      <a href="#top" class="sticky-bar-name">Sean McMinn</a>
+      <nav class="sticky-bar-nav" aria-label="Page sections">
+        <a href="#about">About</a>
+        <a href="#work">Selected Work</a>
+        <a href="#news">Interviews &amp; Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
   <main id="main-content">
     <section id="about" aria-labelledby="about-heading">
       <div class="section-head">
@@ -62,7 +94,7 @@
         <h2 id="work-heading">Selected Work</h2>
       </div>
       <div class="section-body work-groups">
-        <details class="work-group">
+        <details class="work-group" open>
           <summary>POLITICO</summary>
           <ul class="link-list">
             <li><a href="https://www.politico.com/news/2023/02/16/joe-biden-student-debt-relief-00083243" rel="noopener noreferrer" target="_blank">What we know about the 25M Americans who signed up for Biden's student debt relief</a> | <time datetime="2023-02">Feb. 2023</time></li>
